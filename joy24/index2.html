@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Appreciation App</title>
+    
+    <style>
+        body {
+          background-image: url('12.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        </style>
+    <style>
+        
+        body {
+            font-family: arial bold, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #72da11e7;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(115, 138, 206, 0.288);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 25px;
+            color: rgba(45, 228, 39, 0.925);
+        }
+
+   
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #f0f0f0;
+        }
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            animation: fall linear infinite;
+        }
+      
+        
+
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            transform: rotate(-45deg);
+            animation: float 5s infinite;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 10px;
+            top: 0;
+        }
+
+        .balloon {
+            position: absolute;
+            width: 30px;
+            height: 40px;
+            background-color: #FF5733; /* Default balloon color */
+            border-radius: 20px 20px 0 0; /* Rounded top */
+            animation: float 5s infinite;
+        }
+
+        .balloon:after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 20px;
+            background-color: #000; /* Balloon string */
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%);
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-50px) rotate(5deg);
+            }
+            100% {
+                transform: translateY(-100vh) rotate(-5deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const colors = ['#FF5733', '#FFBD33', '#75FF33', '#33FFBD', '#3375FF', '#A533FF', '#FF33A6'];
+
+        function createBalloon() {
+            const balloon = document.createElement('div');
+            balloon.classList.add('balloon');
+            balloon.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            balloon.style.left = Math.random() * 100 + 'vw';
+            balloon.style.animationDuration = Math.random() * 3 + 2 + 's'; // Random duration between 2s and 5s
+            document.body.appendChild(balloon);
+
+            setTimeout(() => {
+                balloon.remove();
+            }, 5000); // Remove balloon after 5 seconds
+        }
+
+        setInterval(createBalloon, 300); // Create balloon every 300ms
+    </script>
+</body>
+</html>
+
+
+            
+</head>
+<body>
+    
+        <div class="container">
+    H𝒂𝒑𝒑𝒚 𝑻𝒆𝒂𝒄𝒉𝒆𝒓’𝒔 𝒅𝒂𝒚. 𝑾𝒆 𝒄𝒂𝒏 𝒏𝒆𝒗𝒆𝒓 𝒕𝒉𝒂𝒏𝒌 𝒚𝒐𝒖 𝒆𝒏𝒐𝒖𝒈𝒉 𝒇𝒐𝒓 𝒚𝒐𝒖𝒓 𝒅𝒆𝒅𝒊𝒄𝒂𝒕𝒊𝒐𝒏, 𝒘𝒊𝒔𝒅𝒐𝒎, 𝒂𝒏𝒅 𝒓𝒆𝒔𝒑𝒐𝒏𝒔𝒊𝒃𝒊𝒍𝒊𝒕𝒚.
+    
+            <h1>𝓣𝓮𝓪𝓬𝓱𝓮𝓻 𝓐𝓹𝓹𝓻𝓮𝓬𝓲𝓪𝓽𝓲𝓸𝓷 𝓐𝓹𝓹</h1>
+            <button id="teacher1">𝐓𝐡𝐚𝐧𝐤 𝐌𝐫.𝐛𝐲𝐚𝐧</button>
+            <button id="teacher2">𝐓𝐡𝐚𝐧𝐤 𝐌𝐬. 𝐉𝐞𝐬𝐬𝐚</button>
+            <button id="teacher3">𝐓𝐡𝐚𝐧𝐤 𝐌𝐫. 𝐦𝐚𝐫𝐯𝐢𝐧</button>
+                <button id="teacher4">𝐓𝐡𝐚𝐧𝐤 𝐌𝐬. 𝐤𝐢𝐚𝐫𝐫𝐚𝐡</button>
+            <div id="message"></div>
+        
+</style>
+<img src="02.jpg" alt="Image description" style="width:200px;height:200px;">
+          </button></button>
+          <img src="03.jpg" alt="Image description" style="width:200px;height:200px;">
+        </button></button>
+        <img src="04.jpg" alt="Image description" style="width:200px;height:200px;">
+    </button></button>
+    <img src="05.jpg" alt="Image description" style="width:200px;height:200px;">
+
+    <script>
+        
+        document.getElementById('teacher1').addEventListener('click', function() {
+            displayMessage('Thank you, Mr. bryan cabrido, for always inspiring us!');
+        });
+
+        document.getElementById('teacher2').addEventListener('click', function() {
+            displayMessage('Thank you, Ms. jessa tugas, for your dedication and hard work!');
+        });
+        document.getElementById('teacher3').addEventListener('click', function() {
+            displayMessage('Thank you, Mr. marvin saraza, for always inspiring us!');
+        });
+
+        document.getElementById('teacher4').addEventListener('click', function() {
+            displayMessage('Thank you, Mrs. kiarrah villegas, for your dedication and hard work!');
+        });
+        
+        function displayMessage(message) {
+            document.getElementById('message').innerText = message;
+        }
+    </script>
+</body>
+</html>
+
